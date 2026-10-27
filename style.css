@@ -1,0 +1,275 @@
+
+/* Styles for my resume */
+
+/* Font for entire page */
+html,
+body {
+  font-family: Jost, sans-serif;
+  color: #212529;
+}
+
+/* Main container */
+#container {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding-bottom: 50px;
+}
+
+/* Name at top of page */
+#name {
+  color: #4376af;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 3.5em;
+  width: 60%;
+  font-weight: 900;
+  min-width: 200px;
+}
+
+/* Main Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+#headshot {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  float: right;
+  position: static;
+}
+
+/* Title */
+#title {
+  color: #4376af;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 0 0;
+}
+
+/* Section headers */
+.sectionheader {
+  color: #d95c38;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 20px 0 10px;
+  padding: 0;
+  width: 100%;
+}
+
+/* Job titles */
+.jobtitle {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Job organizations */
+.organization {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* Job dates */
+.date {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 2px 0 0;
+}
+
+/* Lists */
+ul {
+  font-size: 1em;
+}
+
+/* Space between the three columns */
+.row {
+  row-gap: 15px;
+}
+
+#degrees .list-group-item {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+/* Learn More link */
+.learn {
+  background-color: #4376af;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.learn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact menu */
+ul.menu {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  list-style: none;
+
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 12px;
+}
+
+/* Job descriptions */
+.description {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+
+/* Links */
+a:link {
+  font-weight: 600;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eecc60;
+}
+
+/* Editorial content links */
+.list-group-item a {
+  color: #4376af;
+}
+
+.list-group-item a:hover {
+  color: #d95c38;
+}
+
+
+
+/* Bootstrap navbar customization */
+.navbar {
+  background-color: #d95c38 !important;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar brand */
+.navbar .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand:hover {
+  color: #f0f0f0;
+}
+
+/* Navbar links */
+.navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Mobile navbar toggle */
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Bootstrap skills and education list customization */
+.list-group-item {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #eecc60;
+  display: flex;
+  min-height: 25vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#create {
+  color: #4376af;
+  font-weight: 900;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 20px;
+}
+
+.learn {
+  background-color: #4376af;
+  color: white !important;
+  padding: 8px 16px;
+  margin: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* For smaller screens */
+@media (max-width: 576px) {
+  #name {
+    width: 100%;
+    min-width: 0;
+    font-size: 2em;
+  }
+
+  #title {
+    font-size: 1.1em;
+  }
+
+  .sectionheader {
+    font-size: 1.2em;
+  }
+
+  .menu li {
+    padding: 5px 8px;
+  }
+
+  .navbar {
+    padding: 0.75em;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #headshot {
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
+  }
+}
